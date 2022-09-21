@@ -15,5 +15,5 @@ func main() {
 	router.POST("/user", CreateUser)
 	router.GET("/pokemonwithredis", GetPokemonWithRedis)
 	router.GET("/pokemonwithoutredis", GetPokemonWithoutRedis)
-	log.Fatal(http.ListenAndServe(":3000", router))
+	log.Fatal(http.ListenAndServe(":3001", router))
 }
